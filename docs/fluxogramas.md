@@ -20,7 +20,7 @@ graph LR
 graph LR
     A[Transações de Outros Módulos] --> B[Registro Conta Pagar/Receber]
     B --> C[Quitação com Anexo/Alerta]
-    C --> D[Rateio Custos (Depreciação/Juros)]
+    C --> D[Rateio Custos: Depreciação/Juros]
     D --> E[Cálculo Fluxo Caixa Real/Projetado]
     E --> F[Relatório por Período]
     F --> G[Alerta Vencimento/Notificação IA]
@@ -41,7 +41,7 @@ graph LR
 ```mermaid
 graph LR
     A[Cadastro Fazenda] --> B[Registro Áreas/Talhões]
-    B --> C[Validação Sobreposição/Tamanho (5% tolerância)]
+    B --> C[Validação Sobreposição/Tamanho: 5% tolerância]
     C --> D[Associação Centros de Custo]
     D --> E[Mapa Interativo (Google Earth)]
     E --> F[Relatório por Área/Talhão]
@@ -79,9 +79,9 @@ graph LR
 ## Interface (Front-end com IA)
 ```mermaid
 graph LR
-    A[Input Usuário (App/Web/WhatsApp)] --> B[Processamento via Grok 2.0]
+    A[Input Usuário: App/Web/WhatsApp] --> B[Processamento via Grok 2.0]
     B --> C[Aprovação Administrador]
-    C --> D[Atualização Módulos (Manejo, Estoque, Financeiro)]
+    C --> D[Atualização Módulos: Manejo, Estoque, Financeiro]
     D --> E[Dashboards / Relatórios]
     E --> F[Notificações / Alertas]
     F --> A
@@ -90,10 +90,10 @@ graph LR
 ## Fluxograma Geral
 ```mermaid
 graph LR
-    A[Fazendas (Áreas/Talhões)] --> B[Agrícola (Manejo)]
+    A[Fazendas: Áreas/Talhões] --> B[Agrícola (Manejo)]
     A --> C[Máquinas/Implementos]
     B --> D[Estoque]
-    B --> E[Administrativo (Centros de Custo)]
+    B --> E[Administrativo: Centros de Custo]
     C --> B
     D --> F[Comercial / NFE]
     E --> G[Financeiro]
