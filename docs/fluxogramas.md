@@ -43,7 +43,7 @@ graph LR
     A[Cadastro Fazenda] --> B[Registro Áreas/Talhões]
     B --> C[Validação Sobreposição/Tamanho: 5% tolerância]
     C --> D[Associação Centros de Custo]
-    D --> E[Mapa Interativo (Google Earth)]
+    D --> E[Mapa Interativo: Google Earth]
     E --> F[Relatório por Área/Talhão]
 ```
 
@@ -90,7 +90,7 @@ graph LR
 ## Fluxograma Geral
 ```mermaid
 graph LR
-    A[Fazendas: Áreas/Talhões] --> B[Agrícola (Manejo)]
+    A[Fazendas: Áreas/Talhões] --> B[Agrícola: Manejo]
     A --> C[Máquinas/Implementos]
     B --> D[Estoque]
     B --> E[Administrativo: Centros de Custo]
